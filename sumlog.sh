@@ -4,7 +4,8 @@
 hashlog="hashlog.txt" # Hashes will be appended to this file (absolute path)
 hashtype="256" # +info: "man shasum"
 
-datetime=$(date +"%Y-%m-%d %T") # Date and time, for output
+datetime=$(date +"%Y-%m-%d %T") # System date and time, for output
+# In the future, date and time from NTP server may be added
 
 # Needed for getting file type
 file_ls=$(ls -l "$1") # Dir starts with "d", files with "-"
